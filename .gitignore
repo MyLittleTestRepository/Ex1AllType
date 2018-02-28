@@ -1,0 +1,5 @@
+/bitrix/*
+!/bitrix/backup
+/upload/tmp
+/.idea
+temp.php
