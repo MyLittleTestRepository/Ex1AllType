@@ -25,7 +25,7 @@ $aMenuLinks = Array(
 		"История", 
 		"history.php", 
 		Array(), 
-		Array(), 
+		Array("MENU_COLOR"=>"color-green"),
 		"" 
 	),
 	Array(

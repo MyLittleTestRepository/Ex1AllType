@@ -17,12 +17,12 @@ foreach($arResult as $arItem):?>
 	<?endif?>
     <?if ($arItem["PERMISSION"] > "D"):?>
 	    <?if ($arItem["IS_PARENT"]):?>
-                        <li><a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a><ul>
+                        <li><a href="<?=$arItem['LINK']?>"<?if (!empty($arItem[PARAMS][MENU_COLOR])):?>class="<?=$arItem[PARAMS][MENU_COLOR]?>"<?endif?>><?=$arItem['TEXT']?></a><ul>
                                 <?if(!empty($arItem[PARAMS][MENU_TEXT])):?>
                                     <div class="menu-text"><?=$arItem[PARAMS][MENU_TEXT]?></div>
                                 <?endif;?>
     	<?else:?>
-            <li><a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a></li>
+                                <li><a href="<?=$arItem['LINK']?>"<?if (!empty($arItem[PARAMS][MENU_COLOR])):?>class="<?=$arItem[PARAMS][MENU_COLOR]?>"<?endif?>><?=$arItem['TEXT']?></a></li>
 		<?endif?>
 	<?endif?>
 	<?$previousLevel = $arItem["DEPTH_LEVEL"];?>
