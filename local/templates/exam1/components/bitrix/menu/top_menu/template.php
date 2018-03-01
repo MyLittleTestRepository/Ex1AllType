@@ -18,6 +18,9 @@ foreach($arResult as $arItem):?>
     <?if ($arItem["PERMISSION"] > "D"):?>
 	    <?if ($arItem["IS_PARENT"]):?>
                         <li><a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a><ul>
+                                <?if(!empty($arItem[PARAMS][MENU_TEXT])):?>
+                                    <div class="menu-text"><?=$arItem[PARAMS][MENU_TEXT]?></div>
+                                <?endif;?>
     	<?else:?>
             <li><a href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a></li>
 		<?endif?>
