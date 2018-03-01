@@ -90,13 +90,11 @@
     <!-- /nav -->
     <? if ($is_inner_page)://inner?>
         <!-- breadcrumbs -->
-        <div class="breadcrumbs-box">
-            <div class="inner-wrap">
-                <a href="">Главная</a>
-                <a href="">Мебель</a>
-                <span>Выставки и события</span>
-            </div>
-        </div>
+        <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"top_breadcrumb",
+Array()
+);?>
         <!-- /breadcrumbs -->
     <? endif; ?>
     <!-- page -->
