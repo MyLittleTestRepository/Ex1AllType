@@ -1,5 +1,6 @@
-
-
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<? \Bitrix\Main\Localization\Loc::loadMessages(__FILE__) ?>
+<? $troot = SITE_TEMPLATE_PATH; ?>
 </div>
 </div>
 <!-- /content -->
@@ -18,9 +19,9 @@
         <div class="item-wrap">
             <!-- side action -->
             <div class="side-block side-action">
-                <img src="./img/side-action-bg.jpg" alt="" class="bg">
+                <img src="<?= $troot ?>/img/side-action-bg.jpg" alt="" class="bg">
                 <div class="photo-block">
-                    <img src="./img/side-action.jpg" alt="">
+                    <img src="<?= $troot ?>/img/side-action.jpg" alt="">
                 </div>
                 <div class="text-block">
                     <div class="title">Акция!</div>
@@ -40,13 +41,14 @@
                         <div class="inner-block">
                             <div class="title">
                                 <div class="photo-block">
-                                    <img src="./img/side-opin.jpg" alt="">
+                                    <img src="<?= $troot ?>/img/side-opin.jpg" alt="">
                                 </div>
                                 <div class="name-block"><a href="">Дмитрий Иванов</a></div>
                                 <div class="pos-block">Генеральный директор,"Офис+"</div>
                             </div>
                             <div class="text-block">“В магзине предоставили потрясающий выбор
-                                расцветок, а также, получил большую скидку по карте постоянного...</div>
+                                расцветок, а также, получил большую скидку по карте постоянного...
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,13 +57,14 @@
                         <div class="inner-block">
                             <div class="title">
                                 <div class="photo-block">
-                                    <img src="./img/side-opin.jpg" alt="">
+                                    <img src="<?= $troot ?>/img/side-opin.jpg" alt="">
                                 </div>
                                 <div class="name-block"><a href="">Дмитрий Иванов</a></div>
                                 <div class="pos-block">Генеральный директор,"Офис+"</div>
                             </div>
                             <div class="text-block">“В магазине предоставили потрясающий выбор
-                                расцветок, а также, получил большую скидку по карте постоянного...</div>
+                                расцветок, а также, получил большую скидку по карте постоянного...
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +124,7 @@
             </div>
         </nav>
         <div class="contacts-block">
-            <div class="title-block">Контактная информация</div>
+            <div class="title-block"><?= \Bitrix\Main\Localization\Loc::getMessage('CONTACTS') ?></div>
             <div class="loc-block">
                 <div class="address">ул. Летняя, стр.12, офис 512</div>
                 <div class="phone"><a href="tel:84952128506">8 (495) 212-85-06</a>
@@ -129,16 +132,16 @@
             </div>
             <div class="main-soc-block">
                 <a href="" class="soc-item">
-                    <img src="./img/icons/soc01.png" alt="">
+                    <img src="<?= $troot ?>/img/icons/soc01.png" alt="">
                 </a>
                 <a href="" class="soc-item">
-                    <img src="./img/icons/soc02.png" alt="">
+                    <img src="<?= $troot ?>/img/icons/soc02.png" alt="">
                 </a>
                 <a href="" class="soc-item">
-                    <img src="./img/icons/soc03.png" alt="">
+                    <img src="<?= $troot ?>/img/icons/soc03.png" alt="">
                 </a>
                 <a href="" class="soc-item">
-                    <img src="./img/icons/soc04.png" alt="">
+                    <img src="<?= $troot ?>/img/icons/soc04.png" alt="">
                 </a>
             </div>
             <div class="copy-block">© 2000 - 2012 "Мебельный магазин"</div>

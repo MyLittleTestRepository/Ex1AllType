@@ -2,5 +2,5 @@
 !/bitrix/backup
 /upload/tmp
 /.idea
-test.php
+*test.php
 /local/Ex1DemoMaterials
