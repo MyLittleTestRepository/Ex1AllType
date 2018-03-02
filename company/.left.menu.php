@@ -25,12 +25,19 @@ $aMenuLinks = Array(
 		"История", 
 		"history.php", 
 		Array(), 
-		Array("MENU_COLOR"=>"color-green"),
+		Array("MENU_COLOR"=>"color-green"), 
 		"" 
 	),
 	Array(
 		"Вакансии", 
 		"vacancies.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обратная связь", 
+		"/company/feedback.php", 
 		Array(), 
 		Array(), 
 		"" 
