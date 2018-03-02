@@ -6,7 +6,7 @@
 <? $is_inner_page = !$is_main_page; ?>
 <? $troot = SITE_TEMPLATE_PATH; ?>
 <!DOCTYPE html>
-<html lang="LANGUAGE_ID">
+<html lang="<?=LANGUAGE_ID?>">
 
 <head>
     <? $APPLICATION->ShowHead() ?>
