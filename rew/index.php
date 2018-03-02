@@ -49,8 +49,9 @@ $APPLICATION->SetTitle("Отзывы");
 			1 => "",
 		),
 		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "POSITION",
+			1 => "COMPANY",
+			2 => "",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
