@@ -1,6 +1,7 @@
 /bitrix/*
 !/bitrix/backup
 /upload/tmp
+/upload/resize_cache
 /.idea
 *test.php
 /local/Ex1DemoMaterials
