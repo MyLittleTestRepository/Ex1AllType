@@ -62,7 +62,7 @@ body {
     overflow: hidden;
     clear: both;
     position: relative;
-    background: #316890 url(../img/main/decor02.png) center top;
+    background: #316890 url(img/main/decor02.png) center top;
     padding: 25px 0 35px 0;
     box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.22);
     font-size: 14px;
@@ -136,7 +136,7 @@ body {
     min-width: 320px;
     position: relative;
     overflow: hidden;
-    background: #eceff5 url(../img/main/decor01.png);
+    background: #eceff5 url(img/main/decor01.png);
     line-height: 1.2;
 }
 .header .logo-block {
@@ -576,7 +576,7 @@ body {
         content: "";
         display: inline-block;
         vertical-align: middle;
-        background-image: url(../img/spr.png);
+        background-image: url(img/spr.png);
         background-position: 0px -101px;
         width: 14px;
         height: 14px;
@@ -650,23 +650,23 @@ body {
 \* ----------------------------------- */
 @font-face {
     font-family: 'HelveticaNeueCyrBold';
-    src: url('../fonts/HelveticaNeueCyrBold.eot');
-    src: url('../fonts/HelveticaNeueCyrBold.eot') format('embedded-opentype'), url('../fonts/HelveticaNeueCyrBold.woff2') format('woff2'), url('../fonts/HelveticaNeueCyrBold.woff') format('woff'), url('../fonts/HelveticaNeueCyrBold.ttf') format('truetype'), url('../fonts/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
+    src: url('fonts/HelveticaNeueCyrBold.eot');
+    src: url('fonts/HelveticaNeueCyrBold.eot') format('embedded-opentype'), url('fonts/HelveticaNeueCyrBold.woff2') format('woff2'), url('fonts/HelveticaNeueCyrBold.woff') format('woff'), url('fonts/HelveticaNeueCyrBold.ttf') format('truetype'), url('fonts/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
 }
 @font-face {
     font-family: 'HelveticaNeueCyrLight';
-    src: url('../fonts/HelveticaNeueCyrLight.eot');
-    src: url('../fonts/HelveticaNeueCyrLight.eot') format('embedded-opentype'), url('../fonts/HelveticaNeueCyrLight.woff2') format('woff2'), url('../fonts/HelveticaNeueCyrLight.woff') format('woff'), url('../fonts/HelveticaNeueCyrLight.ttf') format('truetype'), url('../fonts/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
+    src: url('fonts/HelveticaNeueCyrLight.eot');
+    src: url('fonts/HelveticaNeueCyrLight.eot') format('embedded-opentype'), url('fonts/HelveticaNeueCyrLight.woff2') format('woff2'), url('fonts/HelveticaNeueCyrLight.woff') format('woff'), url('fonts/HelveticaNeueCyrLight.ttf') format('truetype'), url('fonts/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
 }
 @font-face {
     font-family: 'HelveticaNeueCyrRoman';
-    src: url('../fonts/HelveticaNeueCyrRoman.eot');
-    src: url('../fonts/HelveticaNeueCyrRoman.eot') format('embedded-opentype'), url('../fonts/HelveticaNeueCyrRoman.woff2') format('woff2'), url('../fonts/HelveticaNeueCyrRoman.woff') format('woff'), url('../fonts/HelveticaNeueCyrRoman.ttf') format('truetype'), url('../fonts/HelveticaNeueCyrRoman.svg#HelveticaNeueCyrRoman') format('svg');
+    src: url('fonts/HelveticaNeueCyrRoman.eot');
+    src: url('fonts/HelveticaNeueCyrRoman.eot') format('embedded-opentype'), url('fonts/HelveticaNeueCyrRoman.woff2') format('woff2'), url('fonts/HelveticaNeueCyrRoman.woff') format('woff'), url('fonts/HelveticaNeueCyrRoman.ttf') format('truetype'), url('fonts/HelveticaNeueCyrRoman.svg#HelveticaNeueCyrRoman') format('svg');
 }
 @font-face {
     font-family: 'als_rublregular';
-    src: url('../fonts/rouble-webfont.eot');
-    src: url('../fonts/rouble-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/rouble-webfont.woff') format('woff'), url('../fonts/rouble-webfont.ttf') format('truetype'), url('../fonts/rouble-webfont.svg#als_rublregular') format('svg');
+    src: url('fonts/rouble-webfont.eot');
+    src: url('fonts/rouble-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/rouble-webfont.woff') format('woff'), url('fonts/rouble-webfont.ttf') format('truetype'), url('fonts/rouble-webfont.svg#als_rublregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -682,85 +682,85 @@ Icon classes can be used entirely standalone. They are named after their origina
 ```
 */
 .i-a01 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -112px -36px;
     width: 4px;
     height: 8px;
 }
 .i-a02 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -112px -64px;
     width: 3px;
     height: 6px;
 }
 .i-a03 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -145px 0px;
     width: 8px;
     height: 5px;
 }
 .i-a04 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -102px -101px;
     width: 14px;
     height: 8px;
 }
 .i-a05 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -68px -101px;
     width: 14px;
     height: 8px;
 }
 .i-a06 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -34px -101px;
     width: 14px;
     height: 8px;
 }
 .i-blank {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -145px -25px;
     width: 1px;
     height: 1px;
 }
 .i-btn-home {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: 0px -101px;
     width: 14px;
     height: 14px;
 }
 .i-btn-search {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -68px -60px;
     width: 19px;
     height: 19px;
 }
 .i-corner01 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: 0px 0px;
     width: 37px;
     height: 40px;
 }
 .i-corner02 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -57px 0px;
     width: 35px;
     height: 35px;
 }
 .i-sl-next {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -34px -60px;
     width: 14px;
     height: 21px;
 }
 .i-sl-prev {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: 0px -60px;
     width: 14px;
     height: 21px;
 }
 .i-title01 {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -112px 0px;
     width: 13px;
     height: 16px;
@@ -829,13 +829,13 @@ input[type="submit"] {
     text-indent: -999px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: 0px -60px;
     width: 14px;
     height: 21px;
 }
 .owl-next {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -34px -60px;
     width: 14px;
     height: 21px;
@@ -922,7 +922,7 @@ input[type="submit"] {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -68px -60px;
     width: 19px;
     height: 19px;
@@ -959,7 +959,7 @@ input[type="submit"] {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -145px 0px;
     width: 8px;
     height: 5px;
@@ -969,7 +969,7 @@ input[type="submit"] {
     font-size: 14px;
 }
 .btn-more.large:after {
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -34px -101px;
     width: 14px;
     height: 8px;
@@ -990,7 +990,7 @@ input[type="submit"] {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -102px -101px;
     width: 14px;
     height: 8px;
@@ -1016,7 +1016,7 @@ input[type="submit"] {
     right: 0;
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -68px -101px;
     width: 14px;
     height: 8px;
@@ -1052,7 +1052,7 @@ input[type="submit"] {
 .btn-arr {
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -68px -101px;
     width: 14px;
     height: 8px;
@@ -1190,7 +1190,7 @@ strong {
     padding: 10px 0 10px 0;
     margin-bottom: 40px;
     min-width: 320px;
-    background: #f2f2f2 url(../img/main/decor03.png) center top;
+    background: #f2f2f2 url(img/main/decor03.png) center top;
     font-size: 12px;
     line-height: 20px;
     color: #4c5d6b;
@@ -1209,7 +1209,7 @@ strong {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -112px -36px;
     width: 4px;
     height: 8px;
@@ -1293,7 +1293,7 @@ strong {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -112px -64px;
     width: 3px;
     height: 6px;
@@ -1443,7 +1443,7 @@ strong {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: 0px 0px;
     width: 37px;
     height: 40px;
@@ -2042,7 +2042,7 @@ hr + .catalog-box {
     padding: 45px 0 55px 0;
     clear: both;
     position: relative;
-    background: #f2f2f2 url(../img/main/decor03.png) center top;
+    background: #f2f2f2 url(img/main/decor03.png) center top;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
 }
 .cnt-section {
@@ -2303,7 +2303,7 @@ hr + .catalog-box {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../img/spr.png);
+    background-image: url(img/spr.png);
     background-position: -57px 0px;
     width: 35px;
     height: 35px;
@@ -2532,12 +2532,12 @@ hr + .catalog-box {
         top: 0;
         bottom: 0;
         left: 66.666%;
-        /*background: url(../img/main/sh02.png) 0 center no-repeat;*/
+        /*background: url(img/main/sh02.png) 0 center no-repeat;*/
     }
     .index-column:before {
         left: auto;
         right: 66.666%;
-        /*background: url(../img/main/sh01.png) right center no-repeat;*/
+        /*background: url(img/main/sh01.png) right center no-repeat;*/
     }
     .index-column .column {
         width: 50%; /*change*/
