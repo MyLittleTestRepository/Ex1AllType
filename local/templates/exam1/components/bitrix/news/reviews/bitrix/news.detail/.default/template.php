@@ -23,11 +23,16 @@ $this->setFrameMode(true);
     </div>
     <div style="clear: both;" class="review-img-wrap"><img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="img"></div>
 </div>
-<?if(false):?>
+<?if($arResult["DISPLAY_PROPERTIES"]['DOCS']):?>
 <div class="exam-review-doc">
-    <p>Документы:</p>
-    <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="./img/icons/pdf_ico_40.png"><a href="">Файл 1</a></div>
-    <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="./img/icons/pdf_ico_40.png"><a href="">Файл 2</a></div>
-    <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="./img/icons/pdf_ico_40.png"><a href="">Файл 3</a></div>
+    <p><?=$arResult["DISPLAY_PROPERTIES"]['DOCS']['NAME']?>:</p>
+    <?if(count($arResult["DISPLAY_PROPERTIES"]['DOCS']['VALUE'])>1):?>
+        <?foreach ($arResult["DISPLAY_PROPERTIES"]['DOCS']['FILE_VALUE'] as $file):?>
+            <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="<?=SITE_TEMPLATE_PATH?>/img/icons/pdf_ico_40.png"><a href="<?=$file['SRC']?>"><?=$file['ORIGINAL_NAME']?></a></div>
+        <?endforeach;?>
+    <?elseif(count($arResult["DISPLAY_PROPERTIES"]['DOCS']['VALUE'])==1):?>
+        <?$file=$arResult["DISPLAY_PROPERTIES"]['DOCS']['FILE_VALUE']?>
+        <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="<?=SITE_TEMPLATE_PATH?>/img/icons/pdf_ico_40.png"><a href="<?=$file['SRC']?>"><?=$file['ORIGINAL_NAME']?></a></div>
+    <?endif;?>
 </div>
 <?endif;?>
