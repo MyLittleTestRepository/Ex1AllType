@@ -27,7 +27,11 @@ $this->setFrameMode(true);
             <?echo $arItem["PREVIEW_TEXT"];?>
         </div>
     </div>
-    <div class="review-img-wrap"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="img"></a></div>
+    <?if($arItem["PREVIEW_PICTURE"]["SRC"]):?>
+        <div class="review-img-wrap"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="img"></a></div>
+    <?else:?>
+        <div class="review-img-wrap"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img src="<?=SITE_TEMPLATE_PATH.'/img/rew/no_photo.jpg'?>" alt="img"></a></div>
+    <?endif;?>
 </div>
 <?endforeach;?>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>

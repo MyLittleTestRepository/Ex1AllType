@@ -21,7 +21,11 @@ $this->setFrameMode(true);
             <?=$arResult["NAME"]?>, <?=$arResult["DISPLAY_ACTIVE_FROM"]?> г., <?=$arResult["DISPLAY_PROPERTIES"]['POSITION']['DISPLAY_VALUE']?>, <?=$arResult["DISPLAY_PROPERTIES"]['COMPANY']['DISPLAY_VALUE']?>.
         </div>
     </div>
-    <div style="clear: both;" class="review-img-wrap"><img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="img"></div>
+    <?if($arResult["DETAIL_PICTURE"]["SRC"]):?>
+        <div style="clear: both;" class="review-img-wrap"><img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="img"></div>
+    <?else:?>
+        <div style="clear: both;" class="review-img-wrap"><img src="<?=SITE_TEMPLATE_PATH.'/img/rew/no_photo.jpg'?>" alt="img"></div>
+    <?endif;?>
 </div>
 <?if($arResult["DISPLAY_PROPERTIES"]['DOCS']):?>
 <div class="exam-review-doc">
