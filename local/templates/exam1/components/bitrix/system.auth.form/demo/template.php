@@ -50,6 +50,14 @@ if($arResult["FORM_TYPE"] == "login")
 						<input type="checkbox" id="login" name="USER_REMEMBER" value="Y"> <label for="login"><?=GetMessage("AUTH_REMEMBER_ME_SHORT")?></label>
 					</div>
 				</div>
+                <?if ($arResult["CAPTCHA_CODE"]):?>
+                <div class="frm-row">
+                                <?echo GetMessage("AUTH_CAPTCHA_PROMT")?>:<br />
+                                <input type="hidden" name="captcha_sid" value="<?echo $arResult["CAPTCHA_CODE"]?>" />
+                                <img src="/bitrix/tools/captcha.php?captcha_sid=<?echo $arResult["CAPTCHA_CODE"]?>" width="180" height="40" alt="CAPTCHA" /><br /><br />
+                                <input type="text" name="captcha_word" maxlength="50" value="" />
+                </div>
+                <?endif?>
                 <div class="frm-row">
                     <input type="submit" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>">
                 </div>
