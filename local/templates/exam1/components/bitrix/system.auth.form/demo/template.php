@@ -50,14 +50,44 @@ if($arResult["FORM_TYPE"] == "login")
 						<input type="checkbox" id="login" name="USER_REMEMBER" value="Y"> <label for="login"><?=GetMessage("AUTH_REMEMBER_ME_SHORT")?></label>
 					</div>
 				</div>
-				<div class="frm-row">
-					<input type="submit" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>">
-				</div>
+                <div class="frm-row">
+                    <input type="submit" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>">
+                </div>
+                <?if($arResult["AUTH_SERVICES"]):?>
+                    <div class="frm-row">
+                            <div class="bx-auth-lbl"><?=GetMessage("socserv_as_user_form")?></div>
+                            <?
+                            $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "icons",
+                                array(
+                                    "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
+                                    "SUFFIX"=>"form",
+                                ),
+                                $component,
+                                array("HIDE_ICONS"=>"Y")
+                            );
+                            ?>
+                    </div>
+                <?endif?>
 			</form></li>
 		<li><a href="<?=$arResult["AUTH_REGISTER_URL"]?>"><?=GetMessage("AUTH_REGISTER")?></a></li>
 	</ul>
 </nav>
-<?
+    <?if($arResult["AUTH_SERVICES"]):?>
+    <?
+    $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "",
+        array(
+            "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
+            "AUTH_URL"=>$arResult["AUTH_URL"],
+            "POST"=>$arResult["POST"],
+            "POPUP"=>"Y",
+            "SUFFIX"=>"form",
+        ),
+        $component,
+        array("HIDE_ICONS"=>"Y")
+    );
+    ?>
+<?endif?>
+    <?
 }
 ?>
 <?if($arResult["FORM_TYPE"] == "logout"):?>
