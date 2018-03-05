@@ -77,7 +77,6 @@
 	false
 );?>
     <!-- /nav -->
-    <? if ($is_inner_page)://inner?>
         <!-- breadcrumbs -->
         <?$APPLICATION->IncludeComponent(
 	"bitrix:breadcrumb",
@@ -85,7 +84,6 @@
 Array()
 );?>
         <!-- /breadcrumbs -->
-    <? endif; ?>
     <!-- page -->
     <div class="page">
         <!-- content box -->
