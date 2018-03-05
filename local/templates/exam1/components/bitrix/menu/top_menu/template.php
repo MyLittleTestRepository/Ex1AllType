@@ -8,7 +8,6 @@
                 <a href="" class="btn-menu btn-toggle"></a>
                 <div class="menu popup-block">
                     <ul class="">
-                        <li class="main-page"><a href="/"><?=Loc::getMessage('MAIN')?></a></li>
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
@@ -17,12 +16,12 @@ foreach($arResult as $arItem):?>
 	<?endif?>
     <?if ($arItem["PERMISSION"] > "D"):?>
 	    <?if ($arItem["IS_PARENT"]):?>
-                        <li><a href="<?=$arItem['LINK']?>"<?if (!empty($arItem[PARAMS][MENU_COLOR])):?>class="<?=$arItem[PARAMS][MENU_COLOR]?>"<?endif?>><?=$arItem['TEXT']?></a><ul>
-                                <?if(!empty($arItem[PARAMS][MENU_TEXT])):?>
-                                    <div class="menu-text"><?=$arItem[PARAMS][MENU_TEXT]?></div>
+                        <li><a href="<?=$arItem['LINK']?>"<?if (!empty($arItem['PARAMS']['MENU_COLOR'])):?>class="<?=$arItem['PARAMS']['MENU_COLOR']?>"<?endif?>><?=$arItem['TEXT']?></a><ul>
+                                <?if(!empty($arItem['PARAMS']['MENU_TEXT'])):?>
+                                    <div class="menu-text"><?=$arItem['PARAMS']['MENU_TEXT']?></div>
                                 <?endif;?>
     	<?else:?>
-                                <li><a href="<?=$arItem['LINK']?>"<?if (!empty($arItem[PARAMS][MENU_COLOR])):?>class="<?=$arItem[PARAMS][MENU_COLOR]?>"<?endif?>><?=$arItem['TEXT']?></a></li>
+                                <li<?if (!empty($arItem['PARAMS']['MAIN_PAGE'])):?> class="main-page"<?endif?>><a href="<?=$arItem['LINK']?>"<?if (!empty($arItem['PARAMS']['MENU_COLOR'])):?>class="<?=$arItem['PARAMS']['MENU_COLOR']?>"<?endif?>><?=$arItem['TEXT']?></a></li>
 		<?endif?>
 	<?endif?>
 	<?$previousLevel = $arItem["DEPTH_LEVEL"];?>
