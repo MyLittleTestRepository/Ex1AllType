@@ -1,0 +1,42 @@
+tasks   dt(min)
+ex1-1   10 //change site sections
+ex1-2   06 //set settings for page & section
+ex1-4   59 //add site template
+ex1-5   01 //set template for section
+
+ex1-6   06 //insert left menu
+ex1-6   29 //coding top menu
+ex1-6   total 35 min
+
+ex1-42  09 //add color to top menu
+ex1-7   19 //add breadcrumbs
+ex1-8   23 //add bottom left menu
+ex1-9   08 //add editable phone number
+ex1-10  11 //add new page template
+ex1-11  24 //add custom include area
+ex1-12  12 //add new snippet
+ex1-13  15 //reviews: create iblock and import data
+
+ex1-14  31 //star to change list template
+ex1-14  18 //add detail reviews
+ex1-14  10 //add DOCS column
+ex1-14  22 //add DOCS multyple logic
+ex1-14  07 //add nophoto logic
+ex1-14  03 //add cpu
+ex1-14  09 //add meta
+ex1-14  total 100 min
+
+ex1-15  37 //add side reviews block
+ex1-16  18 //add search
+ex1-18  11 //add feedback form
+ex1-19  08 //add miniadmin user
+ex1-39  30 //change miniadmin to ask_admin
+ex1-20  32 //add authorization form
+ex1-25  36 //add side menu head color
+ex1-61  07 //add new post template for USER_INFO event
+
+total:
+tasks   22/8
+time    511/240min
+est     23min/task
+est8    185/240 ~77%
