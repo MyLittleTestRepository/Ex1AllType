@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <? \Bitrix\Main\Localization\Loc::loadMessages(__FILE__) ?>
-<? $time = localtime(time(), true)['tm_hour'] ?>
+<? $time = date('H')?>
 <? $is_main_page = CSite::InDir('/index.php'); ?>
 <? $ass = \Bitrix\Main\Page\Asset::getInstance(); ?>
 <? $is_inner_page = !$is_main_page; ?>
