@@ -29,7 +29,6 @@ $this->setFrameMode(true);
                             <div class="photo-block">
                                 <?if($arItem["PREVIEW_PICTURE"]["SRC"]):?>
                                     <?
-                                    $link=$arItem['PREVIEW_PICTURE']['SRC'];
                                     $link=CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'],['width'=>39,'height'=>39])['src'];
                                     ?>
                                     <img src="<?=$link?>" alt="">
