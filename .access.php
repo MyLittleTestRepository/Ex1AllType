@@ -1,4 +1,5 @@
 <?
+$PERM["rew"]["7"]="W";
 $PERM["ask"]["6"]="W";
 $PERM["search"]["5"]="W";
 $PERM["products"]["5"]="W";
